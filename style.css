@@ -1,0 +1,804 @@
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root {
+    --primary: #0f766e;
+    --primary-dark: #115e59;
+    --green: #16a34a;
+    --blue: #2563eb;
+    --yellow: #d97706;
+    --red: #dc2626;
+
+    --background: #f1f5f9;
+    --white: #ffffff;
+
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    min-height: 100vh;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+    background:
+        linear-gradient(
+            135deg,
+            #115e59,
+            #0f766e
+        );
+
+    color: white;
+
+    padding: 18px 6%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 3px 15px
+        rgba(0, 0, 0, 0.12);
+}
+
+
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+
+    background: white;
+
+    color: var(--primary);
+
+    border-radius: 12px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.logo h1 {
+    font-size: 21px;
+
+    margin-bottom: 3px;
+}
+
+
+.logo p {
+    opacity: 0.8;
+
+    font-size: 13px;
+}
+
+
+.datetime {
+    text-align: right;
+
+    line-height: 1.7;
+}
+
+
+.datetime strong {
+    font-size: 20px;
+}
+
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container {
+    width: 88%;
+
+    max-width: 1250px;
+
+    margin: 30px auto;
+}
+
+
+/* ==========================================
+   WELCOME
+========================================== */
+
+.welcome {
+    background:
+        linear-gradient(
+            135deg,
+            #ecfdf5,
+            #dff7f3
+        );
+
+    border-radius: 16px;
+
+    padding: 25px 30px;
+
+    margin-bottom: 22px;
+
+    border: 1px solid #ccfbf1;
+}
+
+
+.welcome h2 {
+    color: var(--primary-dark);
+
+    margin-bottom: 7px;
+}
+
+
+.welcome p {
+    color: var(--muted);
+}
+
+
+/* ==========================================
+   STATISTIK
+========================================== */
+
+.stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 22px;
+}
+
+
+.stat-card {
+    background: var(--white);
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(15, 23, 42, 0.06);
+
+    border-left: 5px solid;
+}
+
+
+.stat-card p {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+
+.stat-card h3 {
+    font-size: 27px;
+}
+
+
+.stat-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+
+/* HADIR */
+
+.hadir {
+    border-color: var(--green);
+}
+
+
+.hadir .stat-icon {
+    background: #dcfce7;
+
+    color: var(--green);
+}
+
+
+/* IZIN */
+
+.izin {
+    border-color: var(--blue);
+}
+
+
+.izin .stat-icon {
+    background: #dbeafe;
+
+    color: var(--blue);
+}
+
+
+/* SAKIT */
+
+.sakit {
+    border-color: var(--yellow);
+}
+
+
+.sakit .stat-icon {
+    background: #fef3c7;
+
+    color: var(--yellow);
+}
+
+
+/* ALPA */
+
+.alpa {
+    border-color: var(--red);
+}
+
+
+.alpa .stat-icon {
+    background: #fee2e2;
+
+    color: var(--red);
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.content-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 22px;
+
+    margin-bottom: 22px;
+}
+
+
+.card {
+    background: var(--white);
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 3px 12px
+        rgba(15, 23, 42, 0.06);
+}
+
+
+.card h2 {
+    font-size: 19px;
+
+    margin-bottom: 5px;
+}
+
+
+.subtitle {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    margin-bottom: 22px;
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+
+    font-size: 14px;
+}
+
+
+.form-group input,
+.form-group select,
+#search {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 9px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+#search:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(15, 118, 110, 0.1);
+}
+
+
+/* ==========================================
+   BUTTON SIMPAN
+========================================== */
+
+.btn-primary {
+    width: 100%;
+
+    border: none;
+
+    background: var(--primary);
+
+    color: white;
+
+    padding: 13px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+
+    transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   INFORMASI
+========================================== */
+
+.info-box {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    padding: 13px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+}
+
+
+.info-box > span {
+    font-size: 20px;
+}
+
+
+.info-box strong {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+}
+
+
+.info-box p {
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   HISTORY
+========================================== */
+
+.history-card {
+    margin-bottom: 30px;
+}
+
+
+.history-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.history-header .subtitle {
+    margin-bottom: 0;
+}
+
+
+.history-actions {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.history-actions #search {
+    width: 220px;
+}
+
+
+/* ==========================================
+   BUTTON HAPUS
+========================================== */
+
+.btn-danger {
+    border: none;
+
+    background: #fee2e2;
+
+    color: var(--red);
+
+    padding: 10px 14px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+.btn-danger:hover {
+    background: #fecaca;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 800px;
+}
+
+
+thead {
+    background: #f8fafc;
+}
+
+
+th,
+td {
+    padding: 13px 12px;
+
+    text-align: left;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    font-size: 13px;
+}
+
+
+th {
+    color: var(--muted);
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+}
+
+
+td {
+    color: #334155;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.status {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.status-hadir {
+    background: #dcfce7;
+
+    color: #15803d;
+}
+
+
+.status-izin {
+    background: #dbeafe;
+
+    color: #1d4ed8;
+}
+
+
+.status-sakit {
+    background: #fef3c7;
+
+    color: #b45309;
+}
+
+
+.status-alpa {
+    background: #fee2e2;
+
+    color: #b91c1c;
+}
+
+
+/* ==========================================
+   DELETE BUTTON
+========================================== */
+
+.btn-delete {
+    background: transparent;
+
+    border: none;
+
+    color: var(--red);
+
+    cursor: pointer;
+
+    font-size: 17px;
+}
+
+
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.empty-state {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    color: var(--muted);
+}
+
+
+.empty-state div {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.empty-state h3 {
+    color: var(--text);
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+.empty-state p {
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer {
+    text-align: center;
+
+    color: var(--muted);
+
+    font-size: 12px;
+
+    padding: 25px;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .header {
+        padding: 15px 5%;
+    }
+
+
+    .logo h1 {
+        font-size: 17px;
+    }
+
+
+    .logo-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .datetime {
+        display: none;
+    }
+
+
+    .container {
+        width: 92%;
+
+        margin: 20px auto;
+    }
+
+
+    .stats {
+        grid-template-columns:
+            1fr 1fr;
+
+        gap: 10px;
+    }
+
+
+    .stat-card {
+        padding: 14px;
+    }
+
+
+    .stat-icon {
+        width: 38px;
+
+        height: 38px;
+    }
+
+
+    .card {
+        padding: 18px;
+    }
+
+
+    .history-header {
+        flex-direction: column;
+    }
+
+
+    .history-actions {
+        width: 100%;
+
+        flex-direction: column;
+    }
+
+
+    .history-actions #search {
+        width: 100%;
+    }
+
+
+    .btn-danger {
+        width: 100%;
+    }
+
+}
